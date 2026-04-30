@@ -28,7 +28,7 @@ app.use(helmet());
 
 // Settingan CORS sesuai ketentuan soal
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://cs-es-zulfahmi-fajri-2406345425-sbd.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
