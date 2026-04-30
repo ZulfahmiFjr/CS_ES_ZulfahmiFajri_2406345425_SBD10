@@ -19,7 +19,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/user/register', formData);
+      const response = await axios.post('https://cs-sbd10-4e680dcc94e1.herokuapp.com/user/register', formData);
       alert('Wih daftar berhasil banget! ' + response.data.message);
       navigate('/login');
     } catch (error) {

@@ -10,7 +10,7 @@ const ItemDetail = () => {
   useEffect(() => {
     const ambilDetailBarang = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/items/${id}`);
+        const response = await axios.get(`https://cs-sbd10-4e680dcc94e1.herokuapp.com/items/${id}`);
         setItemnyaa(response.data.payload);
       } catch (error) {
         console.error('Waduh error ngambil detail barang:', error);

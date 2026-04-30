@@ -9,7 +9,7 @@ const Items = () => {
   useEffect(() => {
     const ambilDataBarang = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/items');
+        const response = await axios.get('https://cs-sbd10-4e680dcc94e1.herokuapp.com/items');
         // Masukin data dari backend ke statenyaa
         setBarangBarang(response.data.payload);
       } catch (error) {

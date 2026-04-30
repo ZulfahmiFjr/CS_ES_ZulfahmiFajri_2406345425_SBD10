@@ -16,7 +16,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/auth/login', credentials);
+      const response = await axios.post('https://cs-sbd10-4e680dcc94e1.herokuapp.com//auth/login', credentials);
     
       const tokennyaa = response.data.payload.token;
       localStorage.setItem('token', tokennyaa);
